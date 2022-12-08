@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../../../../../layout/custom_preview.xml" value="0.16757246376811594" />
+        <entry key="app/src/main/res/drawable-xxxhdpi/bg_bottom_exit_dialog.xml" value="0.1645" />
+        <entry key="app/src/main/res/drawable-xxxhdpi/bg_cancel_btn_exit_dialog.xml" value="0.1645" />
+        <entry key="app/src/main/res/drawable-xxxhdpi/bg_edit_txt.xml" value="0.1645" />
+        <entry key="app/src/main/res/drawable-xxxhdpi/bg_edt_profile.xml" value="0.1645" />
+        <entry key="app/src/main/res/drawable-xxxhdpi/bg_exit_dialog.xml" value="0.1645" />
+        <entry key="app/src/main/res/drawable-xxxhdpi/bg_ext_btn_exit_dialog.xml" value="0.1645" />
+        <entry key="app/src/main/res/drawable-xxxhdpi/bg_item_day_picker.xml" value="0.1645" />
+        <entry key="app/src/main/res/drawable-xxxhdpi/bg_login_btn.xml" value="0.1645" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.14114583333333333" />
+        <entry key="app/src/main/res/layout/feature_list_item.xml" value="0.15520833333333334" />
+        <entry key="app/src/main/res/layout/fragment_blank.xml" value="0.14114583333333333" />
+        <entry key="app/src/main/res/layout/fragment_budget.xml" value="0.3796178343949045" />
+        <entry key="app/src/main/res/layout/fragment_change_password.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_edit_profile.xml" value="0.279193115234375" />
+        <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.18582000732421877" />
+        <entry key="app/src/main/res/layout/fragment_settings.xml" value="0.2920537312825521" />
+        <entry key="app/src/main/res/layout/fragment_statistical.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

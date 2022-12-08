@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/transactionMenu"
+        android:id="@+id/transactionMenu"
+        android:icon="@drawable/ic_transfer"/>
+
+    <item android:title="@string/budgetMenu"
+        android:id="@+id/budgetMenu"
+        android:icon="@drawable/ic_budget"/>
+
+    <item android:title="@string/statisticalMenu"
+        android:id="@+id/statisticalMenu"
+        android:icon="@drawable/ic_bar_chart"/>
+
+    <item android:title="@string/settingMenu"
+        android:id="@+id/settingMenu"
+        android:icon="@drawable/ic_settings"/>
+</menu>

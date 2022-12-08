@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:background="@drawable/bg_exit_dialog"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageDialog"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/img_graph"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/txtTitleDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/warningAdd"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtContentDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:padding="12dp"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bg_bottom_exit_dialog"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnCancelDialog"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginVertical="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_cancel_btn_exit_dialog"
+            android:text="@string/Cancel"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnChangeDialog"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginVertical="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_ext_btn_exit_dialog"
+            android:text="@string/alwayAdd"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

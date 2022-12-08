@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@color/white">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        app:boxStrokeWidth="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+        app:layout_constraintEnd_toStartOf="@+id/textView23"
+        app:layout_constraintStart_toEndOf="@+id/imageView7"
+        app:layout_constraintTop_toTopOf="@+id/imageView7">
+
+        <EditText
+            android:id="@+id/edt_cost"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:autoSizeMaxTextSize="17sp"
+            android:autoSizeMinTextSize="10sp"
+            android:autoSizeStepGranularity="1sp"
+            android:autoSizeTextType="uniform"
+            android:background="@color/white"
+            android:hint="@string/howMuchMoney"
+            android:importantForAutofill="no"
+            android:inputType="number|text"
+            android:maxLength="11"
+            android:textColor="@color/primaryColor"
+            android:textColorHint="@color/primaryColor"
+            tools:ignore="SpeakableTextPresentCheck"
+            tools:targetApi="o" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView23"
+        style="@style/TextTitle"
+        android:text="@string/unitMoney"
+        app:layout_constraintBottom_toBottomOf="@+id/textInputLayout"
+        app:layout_constraintEnd_toStartOf="@+id/btnEditCost"
+        app:layout_constraintTop_toTopOf="@+id/textInputLayout"
+        tools:ignore="TextContrastCheck" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        style="@style/imageViewShow"
+        android:padding="5dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCountCost2"
+        app:srcCompat="@drawable/ic_money"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/tvAvailableCost2"
+        style="@style/TextTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/transactionMenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/tvCountCost2"
+        style="@style/textViewBorder"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAvailableCost2" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/btnChoiceCategory"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/bg_edt_profile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/imgCategory"
+            style="@style/imageViewShow"
+            android:src="@drawable/login"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:riv_corner_radius="100dp"
+            tools:ignore="ImageContrastCheck" />
+
+        <TextView
+            android:id="@+id/tvCategory"
+            style="@style/TextTitle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="5dp"
+            android:text="@string/choiceType"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageView3"
+            app:layout_constraintStart_toEndOf="@+id/imgCategory"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TextContrastCheck" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:padding="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_arrow_right"
+            app:tint="@color/primaryColor"
+            tools:ignore="ContentDescription,ImageContrastCheck" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView21"
+        style="@style/textViewTitle"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/note"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnChoiceCategory"
+        tools:ignore="TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/edtNote"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/custom_button_account_frag"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/note"
+        android:importantForAutofill="no"
+        android:inputType="textMultiLine"
+        android:maxLength="200"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView21"
+        tools:ignore="SpeakableTextPresentCheck,DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/textView24"
+        style="@style/textViewTitle"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/day"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtNote"
+        tools:ignore="TextContrastCheck" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/btnChoiceDay"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/bg_edt_profile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView24">
+
+        <ImageView
+            android:id="@+id/roundedImageView2"
+            style="@style/imageViewShow"
+            android:src="@drawable/ic_calendar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:riv_corner_radius="100dp"
+            app:tint = "@color/primaryColor"
+            tools:ignore="ContentDescription,ImageContrastCheck" />
+
+        <TextView
+            android:id="@+id/tvDayChoice"
+            style="@style/TextTitle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageView2"
+            app:layout_constraintStart_toEndOf="@+id/roundedImageView2"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TextContrastCheck" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:padding="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_arrow_right"
+            app:tint="@color/primaryColor"
+            tools:ignore="ContentDescription,ImageContrastCheck" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/btnSave"
+        android:layout_width="0dp"
+        android:layout_height="54dp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/bg_login_btn"
+        android:gravity="center"
+        android:text="@string/add"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnChoiceDay"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+    <ImageView
+        android:id="@+id/btnDel"
+        style="@style/imageViewShow"
+        app:layout_constraintBottom_toTopOf="@+id/tvCountCost2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_delete"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/btnBack"
+        style="@style/imageViewShow"
+        app:layout_constraintBottom_toTopOf="@+id/tvCountCost2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_back"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:paddingHorizontal="20dp"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7">
+
+        <RadioButton
+            android:id="@+id/radioReceiver"
+            style="@style/TextTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="@color/primaryColor"
+            android:text="@string/moneyReceived"
+            android:textStyle="normal"
+            tools:ignore="TextContrastCheck" />
+
+        <RadioButton
+            android:id="@+id/radioSpent"
+            style="@style/TextTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="@color/primaryColor"
+            android:text="@string/moneySpent"
+            android:textStyle="normal"
+            tools:ignore="TextContrastCheck" />
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/btnEditCost"
+        style="@style/imageViewShow"
+        android:src="@drawable/ic_edt_budget"
+        app:layout_constraintBottom_toBottomOf="@+id/textView23"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView23"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/viewBg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">CDCN-AppMobile</string>
+    <!--    FragmentSignUp-->
+    <string name="SignUpTvInfo">Please input information</string>
+    <string name="SignUpBtnSignUp">Sign Up</string>
+    <string name="SignUpMoveToLogin">Move to login</string>
+    <string name="SignUpCongratulations">Congratulations</string>
+    <string name="SignUpRegisterDone">You have successfully registered!!!</string>
+    <string name="Cancel">Hủy</string>
+    <string name="SignUpExistsEmail">Existed Email %s</string>
+
+    <!--    FragmentDialog-->
+    <string name="DialogBtnConfirm">Confirm</string>
+    <string name="DialogBtnNegative">Negative</string>
+    <string name="transactionMenu">Chi Tiêu</string>
+    <string name="settingMenu">Cài Đặt</string>
+    <string name="budgetMenu">Ngân Sách</string>
+    <string name="statisticalMenu">Thống kê</string>
+    <string name="limitedSpend">Tình trạng tài chính</string>
+    <string name="moneySpent">Tiền đã chi</string>
+    <string name="moneyReceived">Tiền đã thu</string>
+    <string name="day">Ngày</string>
+    <string name="month">Tháng</string>
+    <string name="year">Năm</string>
+    <string name="limited">Hạn mức</string>
+    <string name="loop">Lặp lại</string>
+    <string name="daily">Hàng ngày</string>
+    <string name="monthly">Hàng tháng</string>
+    <string name="yearly">Hàng năm</string>
+    <string name="budget">Ngân sách còn lại</string>
+
+    <!--    FragmentStatistical-->
+    <string name="byMonth">Theo Ngày Trong Tháng</string>
+    <string name="byYear">Theo Tháng Trong Năm</string>
+    <string name="tokenJWT">bearer %s</string>
+    <string name="unitMoney">đ</string>
+    <string name="graph">Đồ thị thu chi ngày hôm nay</string>
+    <string name="unitGraph">(Đơn vị: ngàn đồng)</string>
+
+    <!--    FragmentDetail-->
+    <string name="add">Thêm chi tiêu</string>
+    <string name="update">Cập nhật chi tiêu</string>
+    <string name="emptyList">Bạn chưa có chi tiêu trong ngày này !!!</string>
+    <string name="choiceType">Chọn thể loại chi tiêu !!!</string>
+    <string name="howMuchMoney">Số tiền đã chi tiêu</string>
+    <string name="note">Ghi chú</string>
+
+    <!-- FragmentEditProfile-->
+    <string name="name">Họ và tên</string>
+    <string name="email">Email</string>
+    <string name="username">Username</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="updateProfile">Cập nhật thông tin</string>
+    <string name="confirm">Xác Nhận</string>
+    <string name="passNotMatch">Mật khẩu không trùng khớp</string>
+    <string name="confirmPass">Xác nhận mật khẩu</string>
+    <string name="passCondition">Mật khẩu phải bao gồm chữ hoa, chữ thường và ký tự đặc biệt</string>
+    <string name="newPass">Mật khẩu mới</string>
+    <string name="oldPass">Mật khẩu cũ</string>
+    <string name="changePass">Thay đổi mật khẩu</string>
+    <string name="privateInfo">Thông tin cá nhân</string>
+    <string name="logout">Đăng xuất</string>
+    <string name="aboutUs">Về chúng tôi</string>
+    <string name="tempOfService">Điều khoản và điều kiện</string>
+    <string name="login">Đăng nhập</string>
+    <string name="pass">Mật khẩu</string>
+    <string name="forgotPass">Quên mật khẩu?</string>
+    <string name="areYouNew">Chưa tài khoản?</string>
+    <string name="register">Đăng ký</string>
+    <string name="passNotCorrect">Mật khẩu không đúng !!!</string>
+    <string name="starDay">Ngày bắt đầu</string>
+    <string name="endDay">Ngày kết thúc</string>
+    <string name="unit">Đơn vị: </string>
+    <string name="warningAdd">Bạn sắp vượt quá mức chi tiêu bạn đề ra? Bạn có chắc muốn thêm chi tiêu này?</string>
+    <string name="alwayAdd">Vẫn thêm</string>
+    <string name="WarningBudget">Bạn đã chi tiêu vượt ngân sách rồi !!!</string>
+</resources>

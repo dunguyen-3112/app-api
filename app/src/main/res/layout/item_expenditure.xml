@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_category_choice"
+    android:padding="5dp">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/roundedImageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:padding="5dp"
+        android:src="@drawable/login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:riv_corner_radius="100dp"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/tvName"
+        style="@style/textViewMoney"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:gravity="center|start"
+        android:maxLines="1"
+        android:textColor="@color/text_category_item"
+        app:layout_constraintBottom_toBottomOf="@+id/roundedImageView"
+        app:layout_constraintEnd_toStartOf="@+id/tvMoney"
+        app:layout_constraintStart_toEndOf="@+id/roundedImageView"
+        app:layout_constraintTop_toTopOf="@+id/roundedImageView" />
+
+    <TextView
+        android:id="@+id/tvMoney"
+        style="@style/textViewMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:gravity="center|end"
+        android:textColor="@color/text_item_expenditure"
+        app:layout_constraintBottom_toBottomOf="@+id/tvName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvName"
+        app:layout_constraintWidth_percent="0.5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

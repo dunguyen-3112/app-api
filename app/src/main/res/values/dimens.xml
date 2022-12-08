@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="TextSize18dp" type="dimen">18dp</item>
+    <dimen name="TextSize13dp">13dp</dimen>
+    <dimen name="TitleText">20dp</dimen>
+    <dimen name="viewGraph">350dp</dimen>
+</resources>

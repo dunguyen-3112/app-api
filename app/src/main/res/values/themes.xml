@@ -1,0 +1,83 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.CDCNAppMobile" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryVariant">@color/primaryColor</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/primaryColor</item>
+        <item name="colorSecondaryVariant">@color/primaryColor</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="textViewBig18dp">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/TextSize18dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="TextWarning">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:textColor">@color/holoRedDark</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="layout_goneMarginStart">15dp</item>
+    </style>
+
+    <style name="TextTitle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:textColor">@color/primaryColor</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">left|center_vertical</item>
+    </style>
+
+    <style name="textViewTitle">
+        <item name="android:textColor">@color/colorChineseSilver</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="textViewMoney">
+        <item name="android:textColor">@color/primaryColor</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="textViewAddMoney">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="textViewSmall13dp">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/TextSize13dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="textViewBorder">
+        <item name="android:background">@color/border_color</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_width">0dp</item>
+    </style>
+
+    <style name="imageViewShow">
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="tint">@color/primaryColor</item>
+        <item name="android:padding">10dp</item>
+    </style>
+</resources>

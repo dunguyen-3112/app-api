@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_main_choice"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout5"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/searchView_Choice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed">
+
+        <TextView
+            android:id="@+id/txt_tile_option"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="@color/black"
+            android:textFontWeight="700"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/btn_cancel_choice"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:visibility="gone"
+            android:layout_marginRight="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_cancel" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <SearchView
+        android:layout_marginHorizontal="30dp"
+        android:id="@+id/searchView_Choice"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bg_search_view"
+        android:iconifiedByDefault="false"
+        app:defaultQueryHint="Search Keywords"
+        app:iconifiedByDefault="false"
+        app:layout_constraintBottom_toTopOf="@+id/rcl_choice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout5" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcl_choice"
+        android:layout_marginHorizontal="30dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView_Choice" />
+
+
+
+    <ImageView
+        android:id="@+id/viewBg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

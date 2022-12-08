@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/btnEnableEdit"
+                style="@style/imageViewShow"
+                android:src="@drawable/ic_edt_budget"
+                app:layout_constraintBottom_toTopOf="@+id/textView8"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="ContentDescription,ImageContrastCheck" />
+
+            <TextView
+                android:id="@+id/textView7"
+                style="@style/TextTitle"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/budgetMenu"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/textView8"
+                style="@style/textViewBorder"
+                android:layout_marginTop="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                style="@style/imageViewShow"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView8"
+                app:srcCompat="@drawable/ic_money"
+                tools:ignore="ContentDescription,ImageContrastCheck" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                app:boxStrokeWidth="0dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+                app:layout_constraintEnd_toStartOf="@+id/textView"
+                app:layout_constraintStart_toEndOf="@+id/imageView2"
+                app:layout_constraintTop_toTopOf="@+id/imageView2">
+
+                <EditText
+                    android:id="@+id/edt_limited"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:autoSizeMaxTextSize="17sp"
+                    android:autoSizeMinTextSize="10sp"
+                    android:autoSizeStepGranularity="1sp"
+                    android:autoSizeTextType="uniform"
+                    android:background="@color/white"
+                    android:enabled="false"
+                    android:hint="@string/limited"
+                    android:importantForAutofill="no"
+                    android:inputType="number|text"
+                    android:maxLength="14"
+                    android:textColor="@color/primaryColor"
+                    android:textColorHint="@color/primaryColor"
+                    tools:ignore="SpeakableTextPresentCheck"
+                    tools:targetApi="o" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageView
+                android:id="@+id/imageView4"
+                style="@style/imageViewShow"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="28dp"
+                app:layout_constraintEnd_toStartOf="@+id/textView11"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView2"
+                app:srcCompat="@drawable/ic_calendar"
+                tools:ignore="ContentDescription,ImageContrastCheck" />
+
+            <TextView
+                android:id="@+id/textView11"
+                style="@style/textViewMoney"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="15dp"
+                android:gravity="start|center_vertical"
+                android:text="@string/loop"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+                app:layout_constraintEnd_toStartOf="@+id/tvLoopUnit"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/imageView4"
+                app:layout_constraintTop_toTopOf="@+id/imageView4"
+                tools:ignore="TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/tvLoopUnit"
+                style="@style/textViewMoney"
+                android:layout_height="0dp"
+                android:enabled="false"
+                android:gravity="center_vertical|end"
+                android:paddingStart="10dp"
+                android:text="@string/daily"
+                app:layout_constraintBottom_toBottomOf="@+id/textView11"
+                app:layout_constraintEnd_toStartOf="@+id/btnLoopUnit"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/textView11"
+                app:layout_constraintTop_toTopOf="@+id/textView11"
+                tools:ignore="RtlSymmetry,TextContrastCheck" />
+
+            <ImageView
+                android:id="@+id/btnLoopUnit"
+                style="@style/imageViewShow"
+                android:layout_marginEnd="10dp"
+                android:adjustViewBounds="true"
+                android:enabled="false"
+                android:padding="15dp"
+                android:src="@drawable/ic_arrow_right"
+                app:layout_constraintBottom_toBottomOf="@+id/tvLoopUnit"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/tvLoopUnit"
+                app:layout_constraintTop_toTopOf="@+id/tvLoopUnit"
+                tools:ignore="ContentDescription,ImageContrastCheck" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layoutCalculator"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/custom_button_account_frag"
+                android:padding="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.526"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView15">
+
+                <TextView
+                    android:id="@+id/textView10"
+                    style="@style/textViewTitle"
+                    android:text="@string/limited"
+                    app:layout_constraintBottom_toBottomOf="@+id/tvMoneyLimited"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tvMoneyLimited"
+                    tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    style="@style/textViewTitle"
+                    android:text="@string/moneySpent"
+                    app:layout_constraintBottom_toBottomOf="@+id/tvMoneySpent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tvMoneySpent"
+                    tools:ignore="TextContrastCheck,TextContrastCheck,TextContrastCheck,TextContrastCheck,TextContrastCheck" />
+
+                <TextView
+                    android:id="@+id/tvMoneyLimited"
+                    style="@style/textViewAddMoney"
+                    app:layout_constraintBottom_toTopOf="@+id/tvMoneySpent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_chainStyle="packed" />
+
+                <TextView
+                    android:id="@+id/tvMoneySpent"
+                    style="@style/textViewAddMoney"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/colorVenetianRed"
+                    app:layout_constraintBottom_toTopOf="@+id/textView14"
+                    app:layout_constraintEnd_toEndOf="@+id/tvMoneyLimited"
+                    app:layout_constraintTop_toBottomOf="@+id/tvMoneyLimited" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/border_color"
+                    app:layout_constraintBottom_toTopOf="@+id/tvBudget"
+                    app:layout_constraintEnd_toEndOf="@+id/tvMoneySpent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvMoneySpent"
+                    app:layout_constraintWidth_percent="0.5" />
+
+                <TextView
+                    android:id="@+id/tvBudget"
+                    style="@style/textViewMoney"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/text_item_expenditure"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/textView14"
+                    app:layout_constraintTop_toBottomOf="@+id/textView14"
+                    tools:ignore="TextContrastCheck" />
+
+                <TextView
+                    android:id="@+id/textView17"
+                    style="@style/textViewTitle"
+                    android:text="@string/budget"
+                    app:layout_constraintBottom_toBottomOf="@+id/tvBudget"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tvBudget"
+                    tools:ignore="TextContrastCheck" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textView15"
+                style="@style/TextTitle"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="44dp"
+                android:text="@string/limitedSpend"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView11"
+                tools:ignore="TextContrastCheck" />
+
+            <ImageView
+                android:id="@+id/viewBg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#80000000"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                tools:ignore="ContentDescription" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView"
+                style="@style/TextTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:text="@string/unitMoney"
+                app:layout_constraintBottom_toBottomOf="@+id/textInputLayout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textInputLayout" />
+
+            <TextView
+                android:id="@+id/tvWarningBudget"
+                style="@style/TextWarning"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="@string/WarningBudget"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgWarningBudget" />
+
+            <ImageView
+                android:id="@+id/imgWarningBudget"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toTopOf="@+id/tvWarningBudget"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layoutCalculator"
+                app:layout_constraintVertical_chainStyle="packed"
+                app:srcCompat="@drawable/img_cry"
+                tools:ignore="ContentDescription" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

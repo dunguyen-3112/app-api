@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:fillViewport="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvAvailableCost"
+                    style="@style/TextTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/limitedSpend"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="TextContrastCheck" />
+
+                <TextView
+                    android:id="@+id/tvCountCost"
+                    style="@style/textViewBorder"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvAvailableCost" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    style="@style/textViewTitle"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="24dp"
+                    android:text="@string/month"
+                    app:layout_constraintEnd_toStartOf="@+id/btnChoiceMonth"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintHorizontal_chainStyle="spread_inside"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvCountCost"
+                    tools:ignore="TextContrastCheck" />
+
+                <TextView
+                    android:id="@+id/btnChoiceMonth"
+                    style="@style/textViewMoney"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="50dp"
+                    android:background="@drawable/bg_edt_profile"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="7dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView2"
+                    app:layout_constraintEnd_toStartOf="@+id/textView6"
+                    app:layout_constraintStart_toEndOf="@+id/textView2"
+                    app:layout_constraintTop_toTopOf="@+id/textView2" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    style="@style/textViewTitle"
+                    android:layout_marginStart="50dp"
+                    android:text="@string/year"
+                    android:textColor="#757575"
+                    app:layout_constraintBottom_toBottomOf="@+id/btnChoiceMonth"
+                    app:layout_constraintEnd_toStartOf="@+id/btnChoiceYear"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/btnChoiceMonth"
+                    app:layout_constraintTop_toTopOf="@+id/btnChoiceMonth" />
+
+                <TextView
+                    android:id="@+id/btnChoiceYear"
+                    style="@style/textViewMoney"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/bg_edt_profile"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="7dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView6"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/textView6"
+                    app:layout_constraintTop_toTopOf="@+id/textView6" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/layoutGraph"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:scrollbars="none"
+                    app:layout_constraintDimensionRatio="1:1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView19"
+                    app:layout_constraintWidth_percent="0.9"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/layoutCalculator"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/custom_button_account_frag"
+                    android:padding="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/layoutGraph">
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        style="@style/textViewTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/moneyReceived"
+                        app:layout_constraintBottom_toBottomOf="@+id/tvMoneyLimited"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/tvMoneyLimited"
+                        tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        style="@style/textViewTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/moneySpent"
+                        app:layout_constraintBottom_toBottomOf="@+id/tvMoneySpent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/tvMoneySpent"
+                        tools:ignore="TextContrastCheck,TextContrastCheck,TextContrastCheck,TextContrastCheck,TextContrastCheck" />
+
+                    <TextView
+                        android:id="@+id/tvMoneyLimited"
+                        style="@style/textViewAddMoney"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorMiddleGreenYellow"
+                        app:layout_constraintBottom_toTopOf="@+id/tvMoneySpent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_chainStyle="packed" />
+
+                    <TextView
+                        android:id="@+id/tvMoneySpent"
+                        style="@style/textViewAddMoney"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/colorVenetianRed"
+                        app:layout_constraintBottom_toTopOf="@+id/textView14"
+                        app:layout_constraintEnd_toEndOf="@+id/tvMoneyLimited"
+                        app:layout_constraintTop_toBottomOf="@+id/tvMoneyLimited" />
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/border_color"
+                        app:layout_constraintBottom_toTopOf="@+id/tvBudget"
+                        app:layout_constraintEnd_toEndOf="@+id/tvMoneySpent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvMoneySpent"
+                        app:layout_constraintWidth_percent="0.4" />
+
+                    <TextView
+                        android:id="@+id/tvBudget"
+                        style="@style/textViewMoney"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/text_item_expenditure"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/textView14"
+                        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rclViewDay"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/bg_edt_profile"
+                    app:layout_constraintEnd_toStartOf="@+id/tvTotalDay"
+                    app:layout_constraintStart_toEndOf="@+id/textView16"
+                    app:layout_constraintTop_toBottomOf="@+id/layoutCalculator"
+                    tools:listitem="@layout/item_day_picker">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+                <TextView
+                    android:id="@+id/tvTotalDay"
+                    style="@style/textViewMoney"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginEnd="20dp"
+                    android:gravity="center|end"
+                    android:textColor="@color/text_item_expenditure"
+                    app:layout_constraintBottom_toBottomOf="@+id/rclViewDay"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/rclViewDay"
+                    app:layout_constraintWidth_percent="0.4" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rclViewSpending"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/custom_button_account_frag"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rclViewDay"
+                    tools:listitem="@layout/item_expenditure" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    style="@style/textViewTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="@string/day"
+                    app:layout_constraintBottom_toBottomOf="@+id/rclViewDay"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/rclViewDay"
+                    tools:ignore="TextContrastCheck" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    style="@style/TextTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="@string/graph"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.501"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnChoiceMonth"
+                    tools:ignore="TextContrastCheck" />
+
+                <TextView
+                    android:id="@+id/textView19"
+                    style="@style/textViewTitle"
+                    android:text="@string/unitGraph"
+                    app:layout_constraintEnd_toEndOf="@+id/textView18"
+                    app:layout_constraintStart_toStartOf="@+id/textView18"
+                    app:layout_constraintTop_toBottomOf="@+id/textView18"
+                    tools:ignore="TextContrastCheck" />
+
+                <TextView
+                    android:id="@+id/tvWarningEmpty"
+                    style="@style/TextTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:text="@string/emptyList"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/rclViewSpending" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnAddExpenditure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        app:tint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_add"
+        tools:ignore="ContentDescription,ImageContrastCheck,SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/viewBg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
